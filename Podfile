@@ -6,6 +6,7 @@ target 'ProjectTest' do
   use_frameworks!
 
   pod 'SnapKit', '~> 3.0.0'
+  pod 'SwiftLint'
   # Pods for ProjectTest
 
 end

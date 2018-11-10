@@ -96,6 +96,8 @@
 			buildConfigurationList = AA76F0E42196B75000044991 /* Build configuration list for PBXNativeTarget "ProjectTest" */;
 			buildPhases = (
 				E13B4890603D52A0A71F1C29 /* [CP] Check Pods Manifest.lock */,
+				AA76F0E92196C4C200044991 /* SwiftLint Auto Correct */,
+				AA76F0E72196C38C00044991 /* SwiftLint */,
 				AA76F0CE2196B74E00044991 /* Sources */,
 				AA76F0CF2196B74E00044991 /* Frameworks */,
 				AA76F0D02196B74E00044991 /* Resources */,
@@ -157,6 +159,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AA76F0E72196C38C00044991 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		AA76F0E92196C4C200044991 /* SwiftLint Auto Correct */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Auto Correct";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		E13B4890603D52A0A71F1C29 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

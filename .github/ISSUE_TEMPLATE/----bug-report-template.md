@@ -1,6 +1,6 @@
 ---
 name: Bug Report Template
-about: '테스트 중 발견된 Bug Report'
+about: 테스트 중 발견된 Bug Report
 title: "[Bug] "
 labels: bug
 assignees: ''

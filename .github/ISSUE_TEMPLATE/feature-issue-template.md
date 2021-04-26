@@ -1,6 +1,6 @@
 ---
 name: Feature Issue Template
-about: '새로운 Release에 추가되는 Feature' 
+about: 새로운 Release에 추가되는 Feature
 title: "[Feature] "
 labels: feature
 assignees: ''
